@@ -1,0 +1,38 @@
+.column {
+    padding: 20px;
+}
+
+.column.header {
+    margin: 1px 260px 50px 260px;
+    text-align: center;
+    width: 55%;
+}
+
+.column.navigation {
+    float: left;
+    width: 25%;
+}
+
+.column.sidebar {
+    float: right;
+    width: 15%;
+    margin: 20px 40px 20px;
+}
+
+.column.content {
+    margin: 1px 260px 20px 260px;
+    width: 55%;
+    text-align: center;
+}
+
+.column.footer {
+    text-align: center;
+    margin: 1px 260px 50px 260px;
+    width: 30%;
+}
+
+.header,
+.footer,
+.sidebar {
+    background: magenta;
+}

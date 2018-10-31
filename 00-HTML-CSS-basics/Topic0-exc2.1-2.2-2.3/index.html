@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="normalize.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="column header">
+        <h1>Cabecera</h1>
+    </header>
+
+    <nav class="column navigation">
+        <a>Segunda pagina</a>
+    </nav>
+
+    <aside class="column sidebar">
+        <div class="column">aside</div>
+    </aside>
+
+    <section class="column content" style="background:red">
+        <header>
+            <h1>Cabecera del articulo</h1>
+        </header>
+        <article>
+            <p>parrafo del articulo</p>
+        </article>
+        <footer class="footer">Pie de la seccion</footer>
+    </section>
+
+    <footer class="column footer">Autor: Etchegaray Gonzalo
+        <nav>
+            <a>Contacto</a>
+            <a>Redes Sociales</a>
+            <a>Quienes somos?</a>
+        </nav>
+    </footer>
+
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    <!-- Add your site or application content here -->
+    <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+    <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+</body>
+
+</html>
