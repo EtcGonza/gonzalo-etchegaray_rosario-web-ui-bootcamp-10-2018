@@ -1,0 +1,75 @@
+    button {
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        margin-top: 10px;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        text-align: center;
+        transition: all 0.2s;
+    }
+    
+    button:hover {
+        color: #000000;
+        background-color: rgb(86, 139, 219);
+    }
+    
+    .box-text {
+        margin-top: 8px;
+    }
+    
+    .addMovie,
+    .removeMovie,
+    .editMovie {
+        max-width: 450px;
+        background: #FAFAFA;
+        padding: 30px;
+        margin: 50px auto;
+        box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+        border: 6px solid #305A72;
+    }
+    /* .removeMovie {
+        max-width: 450px;
+        background: #FAFAFA;
+        padding: 30px;
+        margin: 50px auto;
+        box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+        border: 6px solid #305A72;
+    } */
+    
+    body {
+        color: #333;
+        font: 16px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    table {
+        max-width: 450px;
+        background: #FAFAFA;
+        padding: 30px;
+        margin: 50px auto;
+        box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+        border: 6px solid #305A72;
+    }
+    
+    p,
+    th,
+    td {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    .container {
+        text-align: center;
+    }

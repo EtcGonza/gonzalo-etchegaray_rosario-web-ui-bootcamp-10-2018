@@ -1,0 +1,64 @@
+<div class="addMovie">
+    <p>Add Movie</p>
+    <div class="container">
+        <div>
+            <input #title (keyup.enter)="title.value" class="box-text" placeholder="Title">
+        </div>
+        <div>
+            <input #year (keyup.enter)="year.value" class="box-text" placeholder="Year">
+        </div>
+        <div>
+            <input #duration (keyup.enter)="duration.value" class="box-text" placeholder="Duration">
+        </div>
+        <button (click)="createMovie(title.value,year.value,duration.value)" title="QUE HACE ESTE BOTON?!">Add</button>
+    </div>
+</div>
+
+<div class="editMovie">
+    <p>Edit Movie</p>
+    <div class="container">
+        <div>
+            <input #editTitle (keyup.enter)="editTitle.value" class="box-text" placeholder="New Title">
+        </div>
+
+        <div>
+            <input #editYear (keyup.enter)="editYear.value" class="box-text" placeholder="New Year">
+        </div>
+        <div>
+            <input #editDuration (keyup.enter)="editDuration.value" class="box-text" placeholder="New Duration">
+        </div>
+        <div>
+            <input #editIndex (keyup.enter)="editIndex.value" class="box-text" placeholder="Number">
+        </div>
+
+        <button (click)="setMovie(editYear.value,editTitle.value,editDuration.value,editIndex.value)" title="QUE HACE ESTE BOTON?!">Edit</button>
+    </div>
+</div>
+
+<div class="removeMovie">
+    <p>Remove Movie</p>
+    <div class="container">
+        <input #index (keyup.enter)="removeMovie(index.value)" class="box-text" placeholder="Number">
+    </div>
+    <button (click)="removeMovie(getMovies(index.value))" title="QUE HACE ESTE BOTON?!">Remove</button>
+</div>
+
+<table class="movieList list-numbered">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pos of movies let i = index">
+            <td>{{i}}</td>
+            <td>{{pos.getTitle()}}</td>
+            <td>{{pos.getYear()}}</td>
+            <td>{{pos.getDuration()}}min</td>
+        </tr>
+    </tbody>
+
+</table>
