@@ -1,0 +1,11 @@
+<div class="row m-5">
+    <div class="col">
+        <input #content type="text" [(ngModel)]="content.value" [ngbTypeahead]="search" class="form-control" placeholder="Search Artist">
+    </div>
+    <button type="button" class="btn btn-dark" (click)="searching(content.value)">Search</button>
+</div>
+
+<!-- [items] hace referencia a mi input en mi componente card y eso lo igualo a contentSearch que es la data que tengo en mi componente Search. -->
+<app-card [items]="contentSearch"></app-card>
+
+<!-- (keypress)="searching(content.value)" -->

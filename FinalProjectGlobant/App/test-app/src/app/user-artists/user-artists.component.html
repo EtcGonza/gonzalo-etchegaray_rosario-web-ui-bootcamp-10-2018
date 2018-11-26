@@ -1,0 +1,14 @@
+<div class="card-columns userArtists">
+    <div *ngFor="let artist of userArtists" class="cards p-3">
+        <div class="card">
+            <img (click)="showArtist(artist)" class="card-img-top fade puntero" [src]="artist.images | noimages" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{artist.name}}</h5>
+                <div class="card-text">
+                    <app-badge [value]="artist.type"></app-badge>
+                    <app-badge *ngFor="let genre of artist.genres" [value]="genre"></app-badge>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+Español:
+
+Este proyecto se compone por dos partes. 
+
+La primera es la app dentro de la carpeta "app" donde se compilar el proyecto de Angular y cargar la pagina. La pagina tiene las funcionalidad de:
+
+- Loguearse con la cuenta de Spotify de un usuario cualquiera.
+- Mostrar albums/canciones/artistas que el usuario sigue o tiene guardado en su cuenta de Spotify.
+- Reproducir musica.
+- Buscar un artista y buscar su pagina de inicio.
+- Un home donde se muestra los ultimos contenidos presentados por Spotify.
+- Un "Perfil" que muestra informacion de la cuenta del usuario.
+
+La segunda parte del proyecto es la Api. Se utiliza para guardar todas las busquedas que se realizan en la pestaña "Search" de la app de Angular. Todas las busquedas son guardadas en un archivo .JSON llamado words.json.
+
+Para poder ver la informacion sobre las busquedas que se realizan lo siguiente:
+   1- Abrir la consola del navegador.
+   2- Ir a la pestaña search.
+Si se hace en un orden distinto puede ser que no se muestre el historial. Cualquier cosa que se escriba en la barra de la pestaña "Search" tambien agrega contenido al historial.
+
+------------------------------------------------------------------------
+
+English:
+
+This project is made up of two parts.
+
+The first is the app in the "app" folder where the Angular project is compiled and the page loaded. The page has the functionality of:
+
+- Log in with the Spotify account of any user.
+- Show albums / songs / artists that the user follows or has saved in their Spotify account.
+- Play music.
+- Search for an artist and search for your home page.
+- A home where the latest content presented by Spotify is displayed.
+- A "Profile" that shows information of the user's account.
+
+The second part of the project is the Api. It is used to save all the searches performed in the "Search" tab of the Angular app. All searches are saved in a .JSON file called words.json.
+
+To be able to see the information about the searches that are carried out the following:
+   1- Open the browser console.
+   2- Go to the search tab.
+If done in a different order, the history may not be displayed. Anything that is written to the "Search" tab bar also adds content to the history.

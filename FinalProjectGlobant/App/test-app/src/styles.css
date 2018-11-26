@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #3D72A4;
+    /* background-color: #FF9900; */
+    /* background-color: #C0C0C0; */
+    /* background-color: #E18A07; */
+    /* background-color: #336699; */
+    color: white !important;
+}
+
+
+/* .page {
+    color: white;
+} */
+
+.puntero {
+    cursor: pointer;
+}
+
+.img-circle {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.card-title,
+.card-text {
+    color: black;
+    text-align: center;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+
+/* .btn-outline-success {
+    margin-left: 5px;
+} */
+
+.img-thumb {
+    width: 80px;
+    height: 80px;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade:hover {
+    opacity: 0.5;
+}
