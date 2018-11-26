@@ -1,0 +1,41 @@
+<div class="row m-5">
+    <div class="col-1">
+        <img [src]="artist.images | noimages" class="img-thumbnail img-circle">
+    </div>
+
+    <div class="col">
+        <h3>{{artist.name}}</h3>
+        <!-- <h3>{{artist.id}}</h3> -->
+        <p>
+            <a class="page" [href]="artist.external_urls.spotify">Artist Page</a>
+        </p>
+    </div>
+
+    <div class="col-4 text-right">
+        <button routerLink="/home" class="btn btn-secondary">Back to Home</button>
+        <!-- <button (click)="Un_followArtist(artist.id)" class="btn btn-secondary">Follow</button> -->
+    </div>
+</div>
+
+<div class="row m-5">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><strong>Photo</strong></th>
+                    <th><strong>Album</strong></th>
+                    <th><strong>Song</strong></th>
+                    <th><strong>Track</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let track of topTracks">
+                    <td><img [src]="track.album.images | noimages" class="img-thumb img-circle"></td>
+                    <td>{{track.album.name}}</td>
+                    <td>{{track.name}}</td>
+                    <td><iframe [src]="track.uri | domseguro" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

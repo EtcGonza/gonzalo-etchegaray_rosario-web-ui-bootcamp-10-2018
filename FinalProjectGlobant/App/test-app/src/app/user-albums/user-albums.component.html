@@ -1,0 +1,15 @@
+<div class="card-columns UserAlbums">
+
+    <div *ngFor="let album of userAlbums" class="cards p-3">
+        <div class="card">
+            <img (click)="showAlbum(album)" class="card-img-top fade puntero" [src]="album.album.images | noimages" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{album.album.name}}</h5>
+                <div class="card-text">
+                    <app-badge [value]="album.album.artists[0].name"></app-badge>
+                    <app-badge [value]="album.album.album_type"></app-badge>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
